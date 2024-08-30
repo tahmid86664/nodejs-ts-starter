@@ -3,11 +3,9 @@ import helmet from "helmet";
 import cors, { CorsOptions } from "cors";
 import "dotenv/config";
 
-import cookieParser from "cookie-parser";
 import router from "./routes";
 import { errorHandler, notFoundHandler } from "./middleware/error-handler";
 import { SendResponse } from "./utils";
-import deserializeUser from "./middleware/deserializeUser";
 
 const app: Express = express();
 
@@ -24,8 +22,6 @@ const corsOptions: CorsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(cookieParser());
-app.use(deserializeUser);
 
 app.get("/", (req: Request, res: Response) => SendResponse.success({ res, message: "Hello from Backend Starter Service!!!" }));
 

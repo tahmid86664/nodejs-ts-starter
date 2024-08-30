@@ -1,1 +1,1 @@
-export { default as ExampleModel, Example, examplePrivateFields } from "./example.model";
+// * import from model files

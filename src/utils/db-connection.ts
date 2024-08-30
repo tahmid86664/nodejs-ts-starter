@@ -1,13 +1,11 @@
 import "dotenv/config";
-import config from "config";
-import mongoose from "mongoose";
+// import config from "config";
 import { logger } from "./logger";
 
 export async function dbConnection() {
-  const URI = config.get<string>("db.uri");
+  // ! Add database connection like the following (remove comment) if you want to use Mongoose to connect MondoDB.
+  // const URI = config.get<string>("db.uri");
+  // await mongoose.connect(URI, {});
 
-  const url = URI;
-
-  await mongoose.connect(url, {});
   logger.info("Connected to the database");
 }
