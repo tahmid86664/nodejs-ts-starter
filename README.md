@@ -17,6 +17,7 @@ In this starter project I've included the followings:
 - A well response structure both success and error responses
 - Dummy database connection setup
 - Logging system
+- Simple github action workflow
 - Try Catch wrapper, so you don't need to use try-catch block anywhere
 
 ## Installation
@@ -38,6 +39,14 @@ In this starter project I've included the followings:
 4. Now run the server in development mode
    ```bash
    yarn dev
+   ```
+
+## Addons
+
+1. Remove the current remote Github connection and add you own repository as remote.
+   ```bash
+   git remote remove origin
+   git remote add origin <SSH or HTTPS of your github repository>
    ```
 
 ## Containerization
