@@ -1,7 +1,12 @@
-# Starter Backend Service
+# NodeJS TS Starter Backend Service
 
 Hey, there!
 We always have to set up a project from scratch every time we want to try something or build something. This project setup process always takes time. That's why this project is created and this can be used in any project. All we need to do is follow some simple steps, and our project will be ready to work. So what are you waiting for? Let's dive right in!
+
+## Major Dependencies
+
+- MongoDB as Database
+- Typegoose as ORM
 
 ## What are included?
 
